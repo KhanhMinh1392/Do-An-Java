@@ -1,0 +1,299 @@
+body{
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    overflow-x: hidden;
+    margin: 0px;
+    background-color: #EEEEEE;
+}
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 3px 5px 15px 10px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: black;
+    text-decoration-line: underline;
+    background: #55ACEE;
+}
+
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.img{
+    width: 350px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    left: calc(2% - 65px);
+}
+.catory{
+    margin-top: 70px;
+    text-align: left;
+}
+.infoadmin{
+    margin-top: 30px;
+    margin-left: 300px;
+    font-size: 25px;
+}
+.Thongtintaikhoan{
+    margin-top: 30px;
+    margin-left: 300px;
+    font-size: 17px;
+    background: white;
+    width: 300px;
+    vertical-align: middle;
+}
+.infomation{
+    margin-top: -75px;
+    margin-left: 700px;
+    background: white;
+    height: 350px;
+}
+
+input[type=text] {
+    width: 300px;
+    margin-bottom: 0px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.half-past{
+    margin-top: -330px;
+    margin-left: 400px;
+}
+.first{
+    padding: 10px;
+}
+
+.btn{
+    float: right;
+    margin-top: 150px;
+    padding: 10px;
+    width: 100px;
+    background-color: #55ACEE;
+    border-radius: 5px;
+}
+.btn:hover{
+    background: white;
+    cursor: pointer;
+}
+.move{
+    float: right;
+    margin-top: 800px;
+}
+.h4{
+    margin-left: 300px;
+    font-size: 30px;
+}
+.search{
+    margin-left: 300px;
+    margin-top: 20px;
+}
+
+.search input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.search input[type=text]:focus {
+    width: 100%;
+}
+
+.table{
+    width:80%;
+    margin-top: 50px;
+    margin-left: 260px;
+}
+.table1{
+    width:80%;
+    margin-top: 50px;
+    margin-left: 210px;
+}
+
+.btnadmin{
+    margin-left: 1250px;
+    margin-top: -40px;
+    padding: 5px;
+    width: 180px;
+    border-radius: 5px;
+}
+.btnadmin button{
+    background-color: #55ACEE;
+    border-radius: 5px;
+}
+.btnadmin button:hover{
+    background-color: white;
+    cursor: pointer;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    background: white;
+    position: fixed;
+    width: 84%;
+    margin-left: -10px;
+    top: 0;
+    z-index: 1;
+}
+header h2{
+    color: #222;
+}
+header label span{
+    font-size: 1.7rem;
+    padding-right: 1rem;
+}
+.search-wrapper{
+    border: 1px solid #cccccc;
+    border-radius: 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+.search-wrapper span{
+    display: inline-block;
+    padding: 0rem 1rem;
+    font-size: 1.6rem;
+}
+.search-wrapper input{
+    height: 100%;
+    padding: .5rem;
+    border: none;
+    outline: none;
+}
+
+.user-admin{
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+}
+.user-admin img{
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.user-admin small{
+    display: inline-block;
+    color: grey;
+}
+
+
+main{
+    margin-top: 85px;
+    padding: 2rem 1.5rem;
+    background: #f0f0f0;
+    min-height: calc(100vh - 90px);
+}
+.main-content{
+    margin-left: 260px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    margin-top: 1rem;
+}
+.cards-single{
+    display: flex;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 2px;
+    width: 95%;
+}
+.cards-single div:last-child span{
+    font-size: 3rem;
+    color: #818181;
+}
+.cards-single div:first-child span{
+    color: #818181;
+}
+
+.cards:hover{
+    cursor: pointer;
+
+}
+.cards-single:hover {
+    border: 1px solid #818181;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+/*=================================================================Tab Doanh Thu=======================================*/
+.total{
+    margin-top: 50px;
+}
+
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+
+}
+
+.tablink:hover {
+    background-color: #777;
+    text-decoration-line: underline;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 450px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+.filter{
+    float: right;
+}
+.filter button{
+    width: 180px;
+    height: 40px;
+}
+.filter button:hover{
+    cursor: pointer;
+}
+#density {background-color: white;}
+#revenue {background-color: white;}
+
+
